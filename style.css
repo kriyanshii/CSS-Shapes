@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+body{
+  font-family: 'Lato';
+  background: #d8e2dc;
+  display: inline-block;
+  margin: 0 10%;
+  max-width: 1128px;
+}
+
+.heading{
+ font-size: 50px;
+ text-align: center;
+ margin: 30px auto;
+}
+
+section{
+  width: 920px;
+  height: 320px;
+  margin: 30px;
+  border: #d8e2dc 3px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  box-shadow: 0 10px 30px 0 #264653;
+}
+
+.section-2css{
+  width: 920px;
+  height: 477px;
+  margin: 30px;
+  border: #d8e2dc 3px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  box-shadow: 0 10px 30px 0 #264653;
+}
+
+@media only screen and (max-width: 600px){
+  .shape{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  section{
+    width: 400px;
+    height: 640px;
+    margin: 30px;
+    border: #d8e2dc 3px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    box-shadow: 0 10px 30px 0 #264653;
+  }
+  
+  .section-2css{
+    width: 400px;
+    height: 900px;
+    margin: 30px;
+    border: #d8e2dc 3px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    box-shadow: 0 10px 30px 0 #264653;
+  }
+  
+  .box{
+    padding: 10px;
+  }
+}
+
+.shape{
+  display: flex;
+  justify-content: center;
+}
+
+.box{
+  width: 300px;
+  height: 250x;
+}
+
+.circle{
+  background: black;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+.oval{
+  margin: 20px auto;
+  height: 100px;
+  width: 200px;
+  background: black;
+  border-radius: 50%;
+}
+
+.semi-circle{
+  background: black;
+  height: 100px;
+  width: 200px;
+  border-radius: 100px 100px 0 0;
+  margin: 20px auto;
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  margin: 20px auto;
+}
+
+.trapezium {
+  width: 100px;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid black;
+  margin: 20px auto;
+}
+
+.parallelogram{
+  width: 200px;
+  height: 100px;
+  background: black;
+  transform: skewx(20deg);
+  margin: 20px auto;
+}
+
+.hexagone{
+  position: relative;
+  height: 0px;
+  width: 100px;
+  border-bottom: 120px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent; 
+}
+
+.hexagone::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 100px;
+  left: -100px;
+  top: 120px;
+  border-top: 120px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent; 
+}
+
+.drop{
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 0px 50% 50% 50%;
+  transform: rotate(45deg);
+}
+
+.diamond{
+  margin : 20px auto;
+  position: relative;
+  width: 100px;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+  border-width: 0 50px 50px 50px; 
+}
+
+.diamond::after{
+  content:"";
+  position: absolute;
+  border-style: solid; 
+  border-color: black transparent transparent transparent;
+  border-width: 120px 100px 0 100px;
+  top: 50px;
+  left: -50px;
+}
+
+.cross{
+  margin: auto;
+  width: 20px;
+  height: 150px;
+  background: black;
+  transform: rotate(45deg);
+  margin: 20px auto;
+}
+
+.cross::after{
+  content: "";
+  width: 150px;
+  height: 20px;
+  background: black;
+  left: -63px;
+  top: 63px;
+  position: absolute;
+}
+
+.star{
+  margin: 20px auto;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-bottom: 160px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+}
+
+.star::before{
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 160px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  top: 50px;
+  left: -100px;
+}
+
+.moon{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 22px 22px 0  black;
+}
+
+footer{
+  text-align: center;
+  font-weight: bold;
+}

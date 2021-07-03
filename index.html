@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1 class="heading">CSS Shapes</h1>
+	<section>
+		<h2>Circle</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="circle"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="circle"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.circle{
+  background: black;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  }</code></pre>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Oval</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="oval"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="oval"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.circle{
+  background: black;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  }</code></pre>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Semi-circle</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="semi-circle"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="semi-circle"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.semi-circle{
+  background: black;
+  height: 100px;
+  width: 200px;
+  border-radius: 100px 100px 0 0;
+}</code></pre>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Triangle</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="triangle"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="triangle"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.triangle{
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  margin: 20px auto;
+}</code></pre>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Trapezium</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="trapezium"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="trapezium"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.trapezium {
+  width: 100px;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid black;
+  margin: 20px auto;
+}</code></pre>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Parallelogram</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="parallelogram"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="parallelogram"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.circle{
+  background: black;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  }</code></pre>
+			</div>
+		</div>
+	</section>
+	<section class="section-2css">
+		<h2>Hexagone</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="hexagone"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="hexagone"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.hexagone::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 100px;
+  left: -100px;
+  top: 120px;
+  border-top: 120px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent; 
+}</code></pre>
+				<div class="cssc box">
+					<pre><code>.diamond::after{
+  content:"";
+  position: absolute;
+  border-style: solid; 
+  border-color: black transparent<br> transparent transparent;
+  border-width: 120px 100px 0 100px;
+  top: 50px;
+  left: -50px;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Drop</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="drop"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="drop"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.drop{
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 0px 50% 50% 50%;
+  transform: rotate(45deg);
+}</code></pre>
+			</div>
+		</div>
+	</section>
+	<section class="section-2css">
+		<h2>Daimond</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="diamond"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="diamond"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.diamond{
+  position: relative;
+  width: 100px;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent
+  black transparent;
+  border-width: 0 50px 50px 50px; 
+}</code></pre>
+				<div class="cssc box">
+					<pre><code>.diamond::after{
+  content:"";
+  position: absolute;
+  border-style: solid; 
+  border-color: black transparent<br> transparent transparent;
+  border-width: 120px 100px 0 100px;
+  top: 50px;
+  left: -50px;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-2css">
+		<h2>Cross</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="cross"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="cross"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.cross{
+  width: 20px;
+  height: 150px;
+  background: black;
+  transform: rotate(45deg);
+}</code></pre>
+				<div class="cssc box">
+					<pre><code>.cross::after{
+  content: "";
+  width: 150px;
+  height: 20px;
+  background: black;
+  left: -63px;
+  top: 63px;
+  position: absolute;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-2css">
+		<h2>Star</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="star"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="star"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.star{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-bottom: 160px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+}</code></pre>
+				<div class="cssc box">
+					<pre><code>.star::before{
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 160px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  top: 50px;
+  left: -100px;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>Moon</h2>
+		<div class="shape">
+			<div class="box">
+				<div class="moon"></div>
+			</div>
+			<div class="htmlc box">
+				<h3>HTML</h3>
+				<pre><code>&lt;div class="moon"&gt;&lt;/div&gt;</code></pre>
+			</div>
+			<div class="cssc box">
+				<h2>CSS</h2>
+				<pre><code>.moon{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 22px 22px 0  black;
+}</code></pre>
+			</div>
+		</div>
+	</section>
+
+</body>
+<footer>
+  <p>inspiration from 
+    <a href="https://twitter.com/Prathkum?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Prathkum</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+  </p>
+  <p>Made with ❤ </p>
+  <p>
+    <a href="https://twitter.com/intent/tweet?screen_name=ShahKriyanshi&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @ShahKriyanshi</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+    </script>
+  </p>
+  <p>© 2021 Kriyanshi Shah</p>
+</footer>
+</html>
