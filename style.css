@@ -27,7 +27,7 @@ section{
 
 .section-2css{
   width: 920px;
-  height: 477px;
+  height: 510px;
   margin: 30px;
   border: #d8e2dc 3px;
   display: flex;
@@ -35,6 +35,8 @@ section{
   align-items: center;
   box-shadow: 0 10px 30px 0 #264653;
 }
+
+
 
 @media only screen and (max-width: 600px){
   .shape{
@@ -44,7 +46,7 @@ section{
   
   section{
     width: 400px;
-    height: 640px;
+    height: 680px;
     margin: 30px;
     border: #d8e2dc 3px;
     display: flex;
@@ -55,7 +57,7 @@ section{
   
   .section-2css{
     width: 400px;
-    height: 900px;
+    height: 1000px;
     margin: 30px;
     border: #d8e2dc 3px;
     display: flex;
@@ -67,6 +69,10 @@ section{
   .box{
     padding: 10px;
   }
+
+  .box-2-css{
+    height: 280px;
+  }
 }
 
 .shape{
@@ -76,7 +82,6 @@ section{
 
 .box{
   width: 300px;
-  height: 250x;
 }
 
 .circle{
@@ -130,6 +135,7 @@ section{
 }
 
 .hexagone{
+  margin: 20px auto;
   position: relative;
   height: 0px;
   width: 100px;
@@ -151,7 +157,7 @@ section{
 }
 
 .drop{
-  margin: 20px auto;
+  margin:30px auto;
   width: 100px;
   height: 100px;
   background: black;
@@ -225,6 +231,7 @@ section{
   height: 120px;
   border-radius: 50%;
   box-shadow: 22px 22px 0  black;
+  margin: 20px auto;
 }
 
 footer{
