@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-   	<link rel="icon" type="image/png" sizes="32x32" href="CSS-shapes-square.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="CSS-shapes-square.png">
 	<title>CSS-Shapes</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -44,12 +44,13 @@
 			</div>
 			<div class="cssc box">
 				<h2>CSS</h2>
-				<pre><code>.circle{
-  background: black;
-  height: 200px;
+				<pre><code>.oval{
+  margin: 20px auto;
+  height: 100px;
   width: 200px;
+  background: black;
   border-radius: 50%;
-  }</code></pre>
+}</code></pre>
 			</div>
 		</div>
 	</section>
@@ -132,19 +133,20 @@
 			</div>
 			<div class="cssc box">
 				<h2>CSS</h2>
-				<pre><code>.circle{
-  background: black;
-  height: 200px;
+				<pre><code>.parallelogram{
   width: 200px;
-  border-radius: 50%;
-  }</code></pre>
+  height: 100px;
+  background: black;
+  transform: skewx(20deg);
+  margin: 20px auto;
+}</code></pre>
 			</div>
 		</div>
 	</section>
 	<section class="section-2css">
 		<h2>Hexagone</h2>
 		<div class="shape">
-			<div class="box">
+			<div class="box box-2-css">
 				<div class="hexagone"></div>
 			</div>
 			<div class="htmlc box">
@@ -165,14 +167,16 @@
   border-left: 100px solid transparent; 
 }</code></pre>
 				<div class="cssc box">
-					<pre><code>.diamond::after{
-  content:"";
+					<pre><code>.hexagone::after {
+  content: "";
   position: absolute;
-  border-style: solid; 
-  border-color: black transparent<br> transparent transparent;
-  border-width: 120px 100px 0 100px;
-  top: 50px;
-  left: -50px;
+  height: 0px;
+  width: 100px;
+  left: -100px;
+  top: 120px;
+  border-top: 120px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent; 
 }</code></pre>
 				</div>
 			</div>
@@ -202,9 +206,9 @@
 		</div>
 	</section>
 	<section class="section-2css">
-		<h2>Daimond</h2>
+		<h2>Diamond</h2>
 		<div class="shape">
-			<div class="box">
+			<div class="box box-2-css">
 				<div class="diamond"></div>
 			</div>
 			<div class="htmlc box">
@@ -239,7 +243,7 @@
 	<section class="section-2css">
 		<h2>Cross</h2>
 		<div class="shape">
-			<div class="box">
+			<div class="box box-2-css">
 				<div class="cross"></div>
 			</div>
 			<div class="htmlc box">
@@ -271,7 +275,7 @@
 	<section class="section-2css">
 		<h2>Star</h2>
 		<div class="shape">
-			<div class="box">
+			<div class="box box-2-css">
 				<div class="star"></div>
 			</div>
 			<div class="htmlc box">
@@ -332,7 +336,7 @@
     <a href="https://twitter.com/Prathkum?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Prathkum</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
   </p>
-  <p>Made with ❤ </p>
+  <p>Made with ❤ by</p>
   <p>
     <a href="https://twitter.com/intent/tweet?screen_name=ShahKriyanshi&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @ShahKriyanshi</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
